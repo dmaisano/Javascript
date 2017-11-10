@@ -1,0 +1,6 @@
+Tyler Wellick	kde	80	2
+Tyler Wellick	lan-turtle	200	1
+Tyler Wellick	raspberry-pi	10	4
+Elliot Alderson	gnome	80	1
+Elliot Alderson	rubber-ducky	10	2
+Elliot Alderson	wifi-pineapple	10	4

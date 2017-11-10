@@ -1,0 +1,28 @@
+{
+  "name": "Javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "dev:server": "nodemon graphql/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmaisano/Javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmaisano/Javascript/issues"
+  },
+  "homepage": "https://github.com/dmaisano/Javascript#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7",
+    "infix-to-postfix": "0.0.3",
+    "nodemon": "^1.12.1",
+    "postfix-calculator": "0.0.2"
+  }
+}
