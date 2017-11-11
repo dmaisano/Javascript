@@ -1,7 +1,12 @@
-let sendRequest = () => {
-  let requestId = '123';
+function Person(name) {
+  let _name = name; // '_name' is limited to the scope of this function
 
-  console.log(`Request ${requestId} returned`);
+  // a method of the person function that returns '_name' outside the scope
+  this.getName = () => { 
+    return _name;
+  }
 }
 
-sendRequest();
+let ricardo = new Person('Ricardo');
+
+console.log(ricardo.getName());

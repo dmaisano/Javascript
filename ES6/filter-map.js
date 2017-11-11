@@ -1,9 +1,9 @@
 var animals = [
-    { name: 'Gabe', species: 'dog' },
-    { name: 'Moroes', species: 'cat' },
-    { name: 'Ursoc', species: 'bear' },
+    { name: 'Gabe', species: 'dog'     },
+    { name: 'Moroes', species: 'cat'   },
+    { name: 'Ursoc', species: 'bear'   },
     { name: 'Charles', species: 'fish' },
-    { name: 'Shiba', species: 'dog' },
+    { name: 'Shiba', species: 'dog'    },
     { name: 'Bastion', species: 'bird' },
 ];
 
