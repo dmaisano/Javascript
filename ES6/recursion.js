@@ -16,7 +16,7 @@ let makeTree = (categories, parent) => {
      .forEach(c => node[c.id] = makeTree(categories, c.id));
 
   return node;
-};
+}
 
 let dogs = makeTree(categories, null);
 

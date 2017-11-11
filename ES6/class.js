@@ -15,6 +15,7 @@ class Dog extends Animal {
     this.name = name;
     this.sound = sound;
   }
+  
 
   describe() {
     return `${this.name} is a ${this.species} and he likes to ${this.sound}`;
