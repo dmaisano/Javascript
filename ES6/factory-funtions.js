@@ -9,6 +9,7 @@ const dog = () => {
 const marley = dog();
 marley.bork();
 
+
 class Dog {
   constructor() {
   this.sound = 'woof';
@@ -21,7 +22,7 @@ class Dog {
 
 const lita = new Dog();
 
-// the jquery code below will throw an undef error
+// the jquery code below will throw a 'cannot find property of undef' error
 // $('button#dog').click(lita.woof());
 
 // bind solves the 'this' reference error
