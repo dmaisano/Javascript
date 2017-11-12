@@ -4,6 +4,7 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
+    "watch": "webpack --watch",
     "dev:server": "nodemon graphql/server.js"
   },
   "repository": {
@@ -18,14 +19,18 @@
   },
   "homepage": "https://github.com/dmaisano/Javascript#readme",
   "dependencies": {
-    "babelify-es6-polyfill": "^1.0.4",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.7",
-    "infix-to-postfix": "0.0.3",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babelify-es6-polyfill": "^1.0.4",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
-    "nodemon": "^1.12.1",
-    "postfix-calculator": "0.0.2"
+    "webpack": "^3.8.1"
   }
 }
