@@ -9,7 +9,7 @@
 let num_count_down = (num) => {
   console.log(num);
 
-  num != 0 ? num_count_down(num - 1) : '';
+  num != 0 ? num_count_down(num - 1) : false;
 }
 
 num_count_down(10);
