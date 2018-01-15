@@ -1,38 +1,22 @@
 {
-  "name": "Javascript",
+  "name": "javascript",
   "version": "1.0.0",
-  "description": "",
-  "main": ".eslintrc.js",
+  "description": "Playground for JS features",
+  "main": "./app.js",
   "scripts": {
-    "watch": "webpack --watch",
-    "dev:server": "nodemon graphql/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmaisano/Javascript.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Domenico Maisano",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dmaisano/Javascript/issues"
   },
-  "homepage": "https://github.com/dmaisano/Javascript#readme",
-  "dependencies": {
-    "express": "^4.16.2",
-    "express-graphql": "^0.6.11",
-    "graphql": "^0.11.7",
-    "nodemon": "^1.12.1"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babelify-es6-polyfill": "^1.0.4",
-    "jquery": "^3.2.1",
-    "lodash": "^4.17.4",
-    "webpack": "^3.8.1",
-    "yargs": "^10.0.3"
-  }
+  "homepage": "https://github.com/dmaisano/Javascript#readme"
 }
