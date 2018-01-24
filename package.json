@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/dmaisano/Javascript/issues"
   },
-  "homepage": "https://github.com/dmaisano/Javascript#readme"
+  "homepage": "https://github.com/dmaisano/Javascript#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "yargs": "^11.0.0"
+  }
 }

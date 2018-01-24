@@ -43,14 +43,21 @@ let getAll = () => {
 
 
 let getNote = (title) => {
-  console.log('Reading note', title);
+  let note = fetchNotes('notes-data.json').filter(note => note.title === title);
+
+  return note[0] ? note[0] : undefined;
 };
 
 
 let removeNote = (title) => {
-  let notes = fetchNotes('notes-data.json')
-    .filter(note => note.title !== title);
+  let notes = fetchNotes('notes-data.json').filter(note => note.title !== title);
+
   saveNotes('notes-data.json', notes);
+};
+
+
+let logNote = (note) => {
+  console.log(`\nTitle: ${note.title}\nBody: ${note.body}`)
 };
 
 
@@ -60,4 +67,5 @@ module.exports = {
   getAll,
   getNote,
   removeNote,
+  logNote
 };

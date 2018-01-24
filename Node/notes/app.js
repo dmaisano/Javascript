@@ -1,5 +1,5 @@
-const fs = require('fs');
-const _ = require('lodash');
+// const fs = require('fs');
+// const _ = require('lodash');
 const yargs = require('yargs');
 
 const notes = require('./notes');
@@ -10,32 +10,39 @@ let command = argv._[0];
 
 if(command === 'add') {
   let note = notes.addNote(argv.title, argv.body)
-  if(note)
-    console.log(`\nCreated new note!\nTitle: ${note.title}\nBody: ${note.body}`);
 
-  else 
-    console.log('\nSomething went horribly wrong');
+  if(note) {
+    console.log('Created new note!')
+    notes.logNote(note);
+  } else
+      console.log('Something went horribly wrong');
 }
 
-else if(command === 'read')
-  notes.getNote(argv.title);
+else if(command === 'read') {
+  let note = notes.getNote(argv.title);
+
+  if(note != undefined) {
+    console.log('Note found');
+    notes.logNote(note);
+  } else
+      console.log(`Couldn't find note with title: ${argv.title}`)
+}
 
 else if(command === 'remove') {
-  try {
-    data.find(note => {
-      if(note.title === argv.title) {
-          notes.removeNote(argv.title);
-          console.log(`\nRemoved note with title: ${argv.title}`);
-      }
-    });
-  } catch(err) {
-    console.log(`\nCouldn't find note with title: ${argv.title}`);
-  }
+  data.find(note => {
+    if(note.title === argv.title) {
+        notes.removeNote(argv.title);
+        console.log(`Removed note with title: ${argv.title}`);
+    }
+
+    else
+      console.log(`Couldn't find note with title: ${argv.title}`);
+  });
 }
   
 
 else if(command === 'list')
-notes.getAll();
+  notes.getAll();
 
 else
-  console.log(`'${command} not recognized`);
+  console.log(`${command} not recognized`);
