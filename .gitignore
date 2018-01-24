@@ -31,3 +31,4 @@ dwsync.xml
 #Personal Pref.
 #.eslintrc.js
 test.*
+dist/*
