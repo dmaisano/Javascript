@@ -17,7 +17,7 @@ rl.question('Enter the name of a person: ', function(answer) {
   rl.on('line', function(saying) { // anonymous function that executes when the user is prompted a question
 
     person.sayings.push(saying.trim());
-    // pushing the 'saying' from the user input to the person.sayings[] array 
+    // pushing the 'saying' from the user input to the person.sayings[] array
     // trim removes whitespace from the string
 
     if(saying.toLowerCase().trim() === 'exit') { // if the user input === 'exit' close readline

@@ -1,6 +1,6 @@
 let fs = require('fs');
 
-/* removeBreak(x) iterates through the array of text generated below 
+/* removeBreak(x) iterates through the array of text generated below
 and removes any linebreaks found in each element */
 function removeBreak(arr) {
     for(let i = 0; i < arr.length; ++i) {
@@ -15,7 +15,7 @@ let file = fs.readFileSync('data.txt', 'utf8') // grab the file and converts it 
     .split('\n'); // splits the file text into an array every at every new line encountered
 
 let data = removeBreak(file) // removes the '\r' break-line characters from the file
-    .map( line => line.split('\t')) // creates arrays contained within a single array at every tab encountered 
+    .map( line => line.split('\t')) // creates arrays contained within a single array at every tab encountered
     .reduce( (customers, line) => { // customers = {} initial empty object literal, line = each element contained within the large array
         customers[line[0]] = customers[line[0]] || [] // creates an empty array for the customers name if one is not already created
         customers[line[0]].push({ // push values to the array created above

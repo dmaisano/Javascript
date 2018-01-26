@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/dmaisano/Javascript#readme",
   "dependencies": {
+    "compute-variance": "^3.0.0",
     "lodash": "^4.17.4",
+    "stats-lite": "^2.1.0",
     "yargs": "^11.0.0"
   }
 }

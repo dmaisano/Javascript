@@ -11,11 +11,11 @@ const dragonEvents = [
   { type: 'attack', value: 30, target: 'player-hero' },
 ];
 
-const totalDamage = dragonEvents 
+const totalDamage = dragonEvents
   .filter(e => e.type === 'attack')
   .filter(e => e.target === 'player-hero')
   .map(e => e.value)
-  .reduce((prev, value) => (prev || 0) + value); 
+  .reduce((prev, value) => (prev || 0) + value);
 
 const attacks = dragonEvents
   .filter( (e) => e.type == 'attack');

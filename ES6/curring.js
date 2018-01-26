@@ -4,11 +4,11 @@ const _ = require('lodash');
 
 // Dragon is written to be curryable from the start
 let dragon =
-  name => 
-    size => 
-      elem => 
+  name =>
+    size =>
+      elem =>
         name + ' is a ' +
-        size  + ' dragon that breathes ' + 
+        size  + ' dragon that breathes ' +
         elem + '!'
 
 
@@ -40,4 +40,4 @@ let hasStand = (stand, obj) => obj.stand === stand;
 let jotaro = standUsers.filter(user => hasStand('Star Platinum', user));
 
 console.log(jotaro);
-*/ 
+*/

@@ -1,6 +1,6 @@
 let fs = require('fs');
 
-/* removeBreak(x) iterates through the array of text generated below 
+/* removeBreak(x) iterates through the array of text generated below
 and removes any linebreaks found in each element */
 function removeBreak(arr) {
     for(let i = 0; i < arr.length; ++i) {
@@ -22,6 +22,6 @@ let data = removeBreak(fs.readFileSync('data.txt', 'utf8').trim().split('\n'))
 
         return customers
     }, {});
-    
+
 
 console.log(JSON.stringify(data, null, 2));

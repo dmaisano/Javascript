@@ -39,7 +39,7 @@ else if(command === 'remove') {
       console.log(`Couldn't find note with title: ${argv.title}`);
   });
 }
-  
+
 
 else if(command === 'list')
   notes.getAll();

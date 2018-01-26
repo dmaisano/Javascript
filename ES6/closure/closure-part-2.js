@@ -1,4 +1,4 @@
-// In a closure the inner function displayName() has access 
+// In a closure the inner function displayName() has access
 // to 'name' in the outer function foo() which is outside of it's scope
 
 let foo = () => {
