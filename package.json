@@ -1,28 +1,16 @@
 {
   "name": "javascript",
   "version": "1.0.0",
-  "description": "Playground for JS features",
-  "main": "./app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dmaisano/Javascript.git"
-  },
-  "keywords": [
-    "Javascript"
-  ],
-  "author": "Domenico Maisano",
+  "description": "Collection of JS Files & Projects",
+  "main": "index.js",
+  "repository": "https://github.com/dmaisano/Javascript.git",
+  "author": "dmaisano <dev.dmaisano@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dmaisano/Javascript/issues"
+  "scripts": {
+    "debug": "nodemon --inspect-brk"
   },
-  "homepage": "https://github.com/dmaisano/Javascript#readme",
-  "dependencies": {
-    "compute-variance": "^3.0.0",
-    "lodash": "^4.17.4",
-    "stats-lite": "^2.1.0",
+  "devDependencies": {
+    "nodemon": "^1.14.11",
     "yargs": "^11.0.0"
   }
 }
