@@ -1,11 +1,35 @@
 // const fs = require('fs');
-// const _ = require('lodash');
 const yargs = require('yargs');
-
 const notes = require('./notes');
+
 let data = notes.fetchNotes();
 
-const argv = yargs.argv;
+const titleOptions = {
+  describe: 'Title of note',
+  alias: 't',
+  demand: true
+};
+
+const bodyOptions = {
+  describe: 'The body of the note',
+  alias: 'b',
+  demand: true
+};
+
+const argv = yargs
+  .command('add', 'Add a new note', {
+    title: titleOptions,
+    body: bodyOptions 
+  })
+  .command('list', 'List all notes')
+  .command('read', 'Read a note', {
+    title: titleOptions
+  })
+  .command('remove', 'Remove a note', {
+    title: titleOptions
+  })
+  .help()
+  .argv;
 let command = argv._[0];
 
 if(command === 'add') {
@@ -18,6 +42,7 @@ if(command === 'add') {
       console.log('Something went horribly wrong');
 }
 
+
 else if(command === 'read') {
   let note = notes.getNote(argv.title);
 
@@ -27,6 +52,7 @@ else if(command === 'read') {
   } else
       console.log(`Couldn't find note with title: ${argv.title}`)
 }
+
 
 else if(command === 'remove') {
   data.find(note => {
@@ -41,8 +67,12 @@ else if(command === 'remove') {
 }
 
 
-else if(command === 'list')
-  notes.getAll();
+else if(command === 'list') {
+  let data = notes.getAll();
+
+  for(note of data)
+    notes.logNote(note);
+}
 
 else
   console.log(`${command} not recognized`);

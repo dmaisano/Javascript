@@ -57,7 +57,7 @@ let removeNote = (title) => {
 
 
 let logNote = (note) => {
-  console.log(`\nTitle: ${note.title}\nBody: ${note.body}`)
+  console.log(`------\nTitle: ${note.title}\nBody: ${note.body}`)
 };
 
 
