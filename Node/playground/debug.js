@@ -4,7 +4,7 @@ let person = {
 
 person.age = 25;
 
-debugger;
+// debugger;
 
 person.age = 'Mike';
 
